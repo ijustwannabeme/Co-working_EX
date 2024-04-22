@@ -124,6 +124,81 @@
   margin-top: 24px;
 }
 
+/* section2 - advantage */
+.section-advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 64px 112px 64px;
+}
+
+.section-advantage-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-advantage h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-advantage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 80px;
+}
+
+.section-advantage-list-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-advantage-list-detail-img {
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-top-image {
+  position: absolute;
+}
+
+.advantage-bottom-image {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+
+.section-advantage-list-detail h4 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-advantage-list-detail p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
 /* Blog */
 .Blog {
   position: static;
@@ -182,6 +257,194 @@
   text-transform: uppercase;
 }
 
+/* Content */
+.Blog .Section-Title .content {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+/* Frame 65 */
+.Blog .Section-Title .content .Frame-65 {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+/* Heading */
+.Blog .Section-Title .content .Frame-65 .Heading {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Text */
+.Blog .Section-Title .content .Text {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Frame 66 */
+.Blog .Section-Title .content .Frame-66 {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.Blog .content {
+  /* Content */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 80px 0px;
+}
+
+.Blog .Row {
+  /* Row */
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 64px 0px;
+}
+
+.Blog .Row .Card {
+  /* Card */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 32px;
+}
+
+.Blog .Row .Card .content {
+  /* Content */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.Blog-Content {
+  /* Content */
+  position: static;
+  margin: 24px 0px;
+}
+
+.Blog-Content img {
+  /* Placeholder / Image */
+  position: static;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.Blog-Text {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 8px 0;
+}
 /* Footer */
 footer {
   position: static;
