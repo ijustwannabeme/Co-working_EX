@@ -2,6 +2,8 @@
   margin: 0 auto;
 }
 
+/* nav */
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -37,7 +39,83 @@
   gap: 24px;
 }
 
+/* header */
+.main-header {
+  padding: 112px 64px 112px 64px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-header-text-title {
+  position: relative;
+}
+
+.main-header-text-title h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.main-header-text-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.main-header-text p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.main-header-text img {
+  padding-top: 16px;
+  width: 143px;
+  height: 61px;
+}
+
+.main-header-image {
+  border-radius: 48px;
+  width: 640px;
+  height: 640px;
+}
 /* Card */
+
+/* Footer */
+footer {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 64px;
+  flex: none;
+  order: 10;
+  flex-grow: 0;
+  margin: 0px;
+}
 
 .Newsletter {
   color: rgb(255, 255, 255);
@@ -49,8 +127,6 @@
 }
 .card {
   position: static;
-  width: 1312px;
-  height: 340px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -72,8 +148,6 @@
 /* Form */
 .card .Form {
   position: static;
-  width: 500px;
-  height: 45px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -124,4 +198,163 @@
   margin: 0px 24px;
   border: 1px solid rgb(29, 30, 28);
   border-radius: 42px;
+}
+
+/* Links */
+.card .Links {
+  position: static;
+  width: 588px;
+  height: 244px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 128px;
+}
+
+/* Heading */
+.card .Links .Heading {
+  position: static;
+  width: 169.33px;
+  height: 18px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Column */
+.card .Column {
+  position: static;
+  width: 169.33px;
+  height: 244px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 40px;
+}
+
+/* Link */
+.card .Links .Link {
+  position: static;
+  width: 169.33px;
+  height: 26px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Row */
+.Row {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 32px 0px;
+}
+
+/* Text */
+.Row .Text {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  color: rgb(29, 30, 28);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Footer Links */
+.Row .Footer-Links {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.Row .Footer-Links .Links {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  color: rgb(29, 30, 28);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
 }
