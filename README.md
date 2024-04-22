@@ -1,6 +1,7 @@
 # Co-working Page 프로젝트
 
 이 프로젝트는 NaMo 팀이 수행한 Co-Working Page의 HTML/CSS 실습입니다. 프로젝트는 다음과 같은 내용을 포함합니다:
+![image](https://github.com/ijustwannabeme/Co-working_EX/assets/43513001/844b1a39-37f0-455e-9c59-718ff84086ac)
 
 - Co-Working Page의 디자인과 레이아웃
 - Flexbox, Grid, Absolute 등의 CSS 레이아웃 기술의 활용
