@@ -259,6 +259,11 @@
   padding-top: 56px;
 }
 
+/* section4 - statistic */
+.section-statistic {
+  display: flex;
+  justify-content: center;
+}
 /* CTA */
 
 .CTA {
@@ -306,21 +311,23 @@
   margin: 24px 0px;
 }
 
-.CTA-Head {
-  /* Heading */
+.CTA-Content .Frame-65 {
+  /* Frame 65 */
   position: static;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 0px;
 
   /* Inside Auto Layout */
   flex: none;
   order: 0;
+  align-self: stretch;
   flex-grow: 0;
-  margin: 0px 24px;
+  margin: 24px 0px;
+
   color: rgb(29, 30, 28);
   font-family: Pretendard;
   font-size: 96px;
