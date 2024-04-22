@@ -1,0 +1,1346 @@
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* nav */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 64px 10px 64px;
+  margin: 13.5px 0;
+}
+
+.top-nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.top-nav-items {
+  display: flex;
+  gap: 48px;
+}
+
+.top-nav-items li a {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.top-nav-sign {
+  display: flex;
+  gap: 24px;
+}
+
+/* header */
+.main-header {
+  padding: 112px 64px 112px 64px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-header-text-title {
+  position: relative;
+}
+
+.main-header-text-title h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.main-header-text-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.main-header-text p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.main-header-text img {
+  padding-top: 16px;
+  width: 143px;
+  height: 61px;
+}
+
+.main-header-image {
+  border-radius: 48px;
+  width: 640px;
+  height: 640px;
+}
+
+/* section1 - cooperation */
+
+.section-cooperation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 64px 80px 64px;
+}
+
+.section-cooperation p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-cooperation-company {
+  display: flex;
+  margin-top: 24px;
+  gap: 48px;
+}
+
+/* section2 - advantage */
+.section-advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 64px 112px 64px;
+}
+
+.section-advantage-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-advantage h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-advantage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 80px;
+}
+
+.section-advantage-list-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-advantage-list-detail-img {
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-top-image {
+  position: absolute;
+}
+
+.advantage-bottom-image {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+
+.section-advantage-list-detail h4 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-advantage-list-detail p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* section3 - explore */
+.section-explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 112px 64px 112px 64px;
+}
+
+.section-explore-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-explore-main-img {
+  display: flex;
+  justify-content: center;
+}
+
+.section-explore-main-img img + h1 {
+  margin-left: 8px;
+}
+
+.section-explore-main h5 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-explore-main h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-explore p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-explore-button {
+  padding-top: 24px;
+}
+
+.section-explore-img {
+  padding-top: 56px;
+}
+
+/* section4 - statistic */
+.section-statistic {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 112px 64px 112px 64px;
+}
+
+.section-statistic-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-statistic-text h5 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-statistic-text-content {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 32px;
+}
+
+.section-statistic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  row-gap: 24px;
+}
+
+.section-statistic-grid-component h1 {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  position: absolute;
+  padding-bottom: 8px;
+}
+
+.section-statistic-grid-component img {
+  position: relative;
+  left: 20%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.section-statistic-grid-component p {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 400%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 8px;
+}
+
+/* FAQ */
+
+.Testinomial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Subheading */
+.Testinomial .Section-Title {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 32px 0px;
+}
+
+.Testinomial .Subheading {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* h1 */
+.Testinomial .Section-Title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  /* 변경 가능 */
+  margin-top: 20px;
+  /* 필요에 따라 조정 가능 */
+}
+
+.Cards {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.Quotes {
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.Avatar .Name {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Avatar .Job {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.Cards .Green-Card {
+  position: absolute;
+  width: 360px;
+  height: 313px;
+  left: 8%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgb(211, 249, 133);
+}
+
+/* Gray Card */
+.Cards .Gray-Card {
+  position: absolute;
+  width: 360px;
+  height: 338px;
+  left: 38%;
+  top: 5%;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgb(241, 241, 241);
+}
+
+/* Blue Card */
+.Cards .Blue-Card {
+  position: absolute;
+  width: 360px;
+  height: 338px;
+  left: 68%;
+  top: 80%;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgb(166, 232, 246);
+}
+
+/* Pink Card */
+.Cards .Pink-Card {
+  position: absolute;
+  width: 360px;
+  height: 313px;
+  left: 22%;
+  top: 450%;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+
+  background: rgb(252, 190, 220);
+}
+
+/* Orange Card */
+.Cards .Orange-Card {
+  position: absolute;
+  width: 360px;
+  height: 313px;
+  left: 52%;
+  top: 510%;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgb(251, 200, 153);
+}
+
+.FAQ {
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 112px 64px 112px 64px;
+
+  /* Inside Auto Layout */
+  order: 7;
+  flex-grow: 0;
+  margin: 700px 0px 0px 0px;
+}
+
+/* FAQ Section Title */
+.FAQ .FAQ-Section-Title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 32px;
+}
+
+.FAQ .FAQ-Section-Title .Subheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+
+  /* Inside Auto Layout */
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Frame 62 */
+.FAQ .Frame-62 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 16px 16px;
+}
+
+.FAQ .Frame-62 h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.FAQ .Frame-62 p {
+  /* Text */
+  position: static;
+  width: 391px;
+  height: 76px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Container */
+.FAQ .Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Accordion Item */
+.FAQ .Accordian-Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  /* Inside Auto Layout */
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 0px;
+}
+
+.Divider {
+  position: static;
+  width: 136px;
+  height: 1px;
+  /* Inside Auto Layout */
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  background: rgb(29, 30, 28);
+}
+
+/* Title */
+.FAQ .Titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+.FAQ .Titles .Text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0px 20px 0px;
+
+  /* Inside Auto Layout */
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.FAQ .Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+
+  cursor: pointer;
+}
+
+.FAQ .Title:hover {
+  background-color: #f9f9f9;
+}
+
+.FAQ .Title img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.FAQ .Title:hover img {
+  transform: rotate(180deg);
+}
+
+/* Question */
+.FAQ .Question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 12px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Divider */
+.FAQ .Divider {
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* CTA */
+
+.CTA {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 112px 64px 112px 64px;
+
+  flex: none;
+  order: 8;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.CTA-Column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 80px;
+}
+
+.CTA-Content {
+  /* Content */
+  position: static;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.CTA-Content .Frame-65 {
+  /* Frame 65 */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.CTA-Content .Frame-65 img {
+  margin: 0 24px;
+}
+
+.CTA-Text {
+  /* Text */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Blog */
+.Blog {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 112px 64px;
+  /* Inside Auto Layout */
+  margin: 0px;
+  background: rgb(255, 255, 255);
+}
+
+/* Section Title */
+.Blog .Section-Title {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 80px 0px;
+}
+
+/* Subheading */
+.Blog .Section-Title .Subheading {
+  position: static;
+
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Content */
+.Blog .Section-Title .content {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+/* Frame 65 */
+.Blog .Section-Title .content .Frame-65 {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+/* Heading */
+.Blog .Section-Title .content .Frame-65 .Heading {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Text */
+.Blog .Section-Title .content .Text {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Frame 66 */
+.Blog .Section-Title .content .Frame-66 {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.Blog .Content {
+  /* Content */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.Blog .Row {
+  /* Row */
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Blog .Row .Card {
+  /* Card */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 32px;
+}
+
+.Blog .Row .Card .content {
+  /* Content */
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.Blog-Content {
+  /* Content */
+  position: static;
+  margin: 24px 0px;
+}
+
+.Blog-Content img {
+  /* Placeholder / Image */
+  position: static;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.Blog-Text {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  margin: 0px;
+  padding: 64px;
+}
+
+.Newsletter {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 48px;
+  border-radius: 48px;
+  background: rgb(29, 30, 28);
+}
+
+.Newsletter h1 {
+  color: rgb(255, 255, 255);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 32px;
+}
+
+/* Inside Auto Layout */
+.card .Newsletter .card .Links {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 32px 0px;
+}
+
+/* Form */
+.card .Form {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+/* Text Input */
+.card .Form input[type="email"] {
+  position: static;
+  width: 368px;
+  height: 45px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: rgb(29, 30, 28);
+  color: white;
+  /* 이메일 입력 텍스트 색상을 하얗게 설정 */
+  font-size: 16px;
+  /* 폰트 크기 설정 */
+  font-family: Arial, sans-serif;
+  /* 폰트 패밀리 설정 */
+}
+
+/* button */
+.card .Form img {
+  position: static;
+  width: 108px;
+  height: 45px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 24px;
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+}
+
+/* Links */
+.card .Links {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+/* Heading */
+.card .Links .Heading {
+  position: static;
+  width: 169.33px;
+  height: 18px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Column */
+.card .Column {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 20px;
+}
+
+/* Link */
+.card .Links .Link {
+  position: static;
+
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Row */
+.Row {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 32px 64px 32px 64px;
+}
+
+/* Text */
+.Row .Text {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  color: rgb(29, 30, 28);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Footer Links */
+.Row .Footer-Links {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.Row .Footer-Links .Links {
+  position: static;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  color: rgb(29, 30, 28);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
