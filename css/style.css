@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 64px 10px 64px;
+  margin: 13.5px 0;
 }
 
 .top-nav-text {
@@ -389,7 +390,6 @@
 
 .Quotes {
   flex: none;
-  order: 1;
   align-self: stretch;
   flex-grow: 0;
   margin: 24px 0px;
@@ -625,6 +625,10 @@
 .FAQ .Container {
   display: flex;
   justify-content: space-between;
+}
+
+.Accordian {
+  display: inline-block;
 }
 
 /*
@@ -940,7 +944,6 @@
   order: 0;
   align-self: stretch;
   flex-grow: 0;
-  margin: 8px 0px;
   color: rgb(29, 30, 28);
   font-family: Pretendard;
   font-size: 48px;
@@ -987,7 +990,7 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-  margin: 8px 0px;
+  margin: 12px 0px;
 }
 
 .Blog .Content {
@@ -1080,17 +1083,14 @@
 }
 /* Footer */
 footer {
-  position: static;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 64px;
-  flex: none;
-  order: 10;
   flex-grow: 0;
   margin: 0px;
+  padding: 64px;
 }
 
 .Newsletter {
@@ -1101,13 +1101,14 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
+
 .card {
-  position: static;
+  position: relative;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   padding: 48px;
   border-radius: 48px;
   background: rgb(29, 30, 28);
@@ -1159,11 +1160,10 @@ footer {
   align-items: center;
   padding: 12px;
   border-bottom: 1px solid rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
+  background: rgb(29, 30, 28);
   color: white; /* 이메일 입력 텍스트 색상을 하얗게 설정 */
   font-size: 16px; /* 폰트 크기 설정 */
   font-family: Arial, sans-serif; /* 폰트 패밀리 설정 */
-  margin: 0px 24px;
 }
 
 /* button */
@@ -1188,8 +1188,6 @@ footer {
 /* Links */
 .card .Links {
   position: static;
-  width: 588px;
-  height: 244px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -1199,7 +1197,7 @@ footer {
   flex: none;
   order: 1;
   flex-grow: 1;
-  margin: 0px 128px;
+  margin: 20px;
 }
 
 /* Heading */
@@ -1230,8 +1228,6 @@ footer {
 /* Column */
 .card .Column {
   position: static;
-  width: 169.33px;
-  height: 244px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -1241,14 +1237,13 @@ footer {
   flex: none;
   order: 0;
   flex-grow: 1;
-  margin: 0px 40px;
+  margin: 0px 20px;
 }
 
 /* Link */
 .card .Links .Link {
   position: static;
-  width: 169.33px;
-  height: 26px;
+
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
