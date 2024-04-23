@@ -1,7 +1,5 @@
-.body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  overflow-x: hidden;
 }
 
 /* nav */
@@ -116,6 +114,9 @@
 }
 
 @media (max-width: 768px) {
+  .main-header-image {
+    width: 100%;
+  }
   .main-header {
     display: flex;
     flex-direction: column;
@@ -178,6 +179,12 @@
     justify-content: flex-start;
     margin: 20px;
     gap: 24px;
+    width: 100vw;
+    overflow-x: auto;
+  }
+
+  .section-cooperation-company::-webkit-scrollbar {
+    display: none; /* Chrome , Safari , Opera */
   }
 }
 
@@ -194,6 +201,10 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.section-advantage-main-mobile {
+  display: flex;
 }
 
 .section-advantage h1 {
@@ -270,10 +281,6 @@
     line-height: 140%;
     letter-spacing: 0%;
     text-align: center;
-  }
-
-  .section-advantage-main-mobile {
-    display: flex;
   }
 
   .section-advantage-main-mobile img {
@@ -360,6 +367,10 @@
     text-align: center;
   }
 
+  .section-explore-main h5 {
+    margin: 16px 0px;
+  }
+
   .section-explore-main-img img {
     width: 120px;
     height: 33px;
@@ -376,6 +387,8 @@
   }
 
   .section-explore-img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -453,12 +466,45 @@
   padding-top: 8px;
 }
 
+@media (max-width: 768px) {
+  .section-statistic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-statistic-text h5 {
+    margin: 16px 0px;
+  }
+
+  .section-statistic-text-content {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .section-statistic-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-statistic-grid {
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 /* FAQ */
 
 .Testinomial {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 112px 64px 112px 64px;
 }
 
 /* Subheading */
@@ -501,11 +547,10 @@
 .Cards {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 10%;
 }
 
 .Quotes {
-  flex: none;
   align-self: stretch;
   flex-grow: 0;
   margin: 24px 0px;
@@ -543,8 +588,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 8%;
-  top: 50%;
+  left: 62px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -559,8 +604,8 @@
   position: absolute;
   width: 360px;
   height: 338px;
-  left: 38%;
-  top: 5%;
+  left: 500px;
+  top: 0px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -576,8 +621,8 @@
   position: absolute;
   width: 360px;
   height: 338px;
-  left: 68%;
-  top: 80%;
+  left: 937px;
+  top: 30px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -593,8 +638,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 22%;
-  top: 450%;
+  left: 275px;
+  top: 440px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -602,7 +647,6 @@
   align-items: center;
   padding: 32px;
   border-radius: 24px;
-
   background: rgb(252, 190, 220);
 }
 
@@ -611,8 +655,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 52%;
-  top: 510%;
+  left: 716px;
+  top: 470px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -621,6 +665,57 @@
   padding: 32px;
   border-radius: 24px;
   background: rgb(251, 200, 153);
+}
+
+@media (min-width: 769px) {
+  .arrow-moblie {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Testinomial {
+    padding: 112px 64px 0px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Cards {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Cards .Gray-Card {
+    position: static;
+  }
+
+  .Cards .Green-Card {
+    display: none;
+  }
+
+  .Cards .Blue-Card {
+    display: none;
+  }
+
+  .Cards .Pink-Card {
+    display: none;
+  }
+
+  .Cards .Orange-Card {
+    display: none;
+  }
+
+  .arrow-moblie {
+    display: flex;
+    margin-left: 50%;
+    padding: 10px 0px;
+  }
+
+  .right-arrow {
+    margin-left: 10px;
+  }
 }
 
 .FAQ {
@@ -646,7 +741,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -684,7 +779,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   align-self: stretch;
   flex-grow: 1;
@@ -699,7 +794,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -725,7 +820,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -755,6 +850,12 @@
   order: 0;
   flex-grow: 1;
   margin: 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .FAQ {
+    margin: 100px 0px 0px 0px;
+  }
 }
 
 .Divider {
@@ -804,7 +905,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -836,7 +937,7 @@
   padding: 20px 0px 20px 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   flex-grow: 1;
   margin: 0px 12px;
@@ -858,7 +959,6 @@
 /* CTA */
 
 .CTA {
-  position: static;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -866,10 +966,7 @@
   align-items: center;
   padding: 112px 64px 112px 64px;
 
-  flex: none;
   order: 8;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
 
 .CTA-Column {
@@ -879,7 +976,6 @@
   align-items: center;
   padding: 0px;
 
-  flex: none;
   order: 0;
   flex-grow: 1;
   margin: 0px 80px;
@@ -896,7 +992,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -904,22 +1000,6 @@
 }
 
 .CTA-Content .Frame-65 {
-  /* Frame 65 */
-  position: static;
-  /* 자동 레이아웃 */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 24px 0px;
-
   color: rgb(29, 30, 28);
   font-family: Pretendard;
   font-size: 96px;
@@ -927,10 +1007,6 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-}
-
-.CTA-Content .Frame-65 img {
-  margin: 0 24px;
 }
 
 .CTA-Text {
@@ -943,7 +1019,6 @@
   align-items: center;
   padding: 0px;
 
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -954,7 +1029,6 @@
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0%;
-  text-align: center;
 }
 
 /* Blog */
@@ -981,7 +1055,7 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   flex-grow: 0;
   margin: 80px 0px;
@@ -998,7 +1072,7 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   flex-grow: 0;
   margin: 0px 0px;
@@ -1022,7 +1096,7 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1039,7 +1113,7 @@
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1055,7 +1129,7 @@
   justify-content: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1078,7 +1152,7 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -1101,7 +1175,7 @@
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1119,7 +1193,7 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 1;
   flex-grow: 0;
 }
@@ -1132,7 +1206,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 0;
 }
@@ -1162,7 +1236,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1179,7 +1253,7 @@
   /* Placeholder / Image */
   position: static;
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1240,7 +1314,6 @@ footer {
 
 /* Inside Auto Layout */
 .card .Newsletter .card .Links {
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 32px 0px;
@@ -1255,7 +1328,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1293,7 +1366,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  flex: none;
+
   order: 1;
   flex-grow: 0;
   margin: 0px 24px;
@@ -1310,7 +1383,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 1;
   flex-grow: 1;
   margin: 20px;
@@ -1327,7 +1400,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1350,7 +1423,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 1;
   margin: 0px 20px;
@@ -1366,7 +1439,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding: 8px 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 1;
   margin: 0px;
@@ -1388,7 +1461,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1404,7 +1477,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1425,7 +1498,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
+
   order: 1;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1441,7 +1514,7 @@ footer {
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
+
   order: 0;
   flex-grow: 0;
   margin: 0px 24px;

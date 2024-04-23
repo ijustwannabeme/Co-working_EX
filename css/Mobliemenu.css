@@ -1,0 +1,25 @@
+body {
+  background: rgb(29, 30, 28);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.Menu {
+  padding: 24px 20px;
+}
+
+.Menu .Text {
+  color: rgb(255, 255, 255);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
