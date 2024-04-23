@@ -1,9 +1,52 @@
-.body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
+/* 애니메이션 키 프레임 정의 */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1; /* 시작 시 투명도를 0으로 설정하여 화면에 표시하지 않음 */
+  }
+  50% {
+    opacity: 1; /* 1.5초 후 투명도를 1로 설정하여 화면이 표시됨 */
+  }
+  100% {
+    opacity: 0; /* 3초 후 투명도를 다시 0으로 설정하여 화면이 사라짐 */
+    display: none;
+  }
+}
+
+/* 애니메이션 적용 */
+.white-screen {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: fadeInOut 5s ease-in-out forwards; /* 애니메이션 이름, 지속 시간, 이징 함수 및 반복 옵션 설정 */
+}
+
+.centered-background-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* 이미지를 화면 위로 올립니다. */
+}
+
+.centered-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  z-index: 4; /* 이미지를 화면 위로 올립니다. */
+}
 /* nav */
 
 .top-nav {
@@ -40,6 +83,18 @@
 .top-nav-sign {
   display: flex;
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .top-nav-text {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-nav-mobile-list {
+    display: none;
+  }
 }
 
 /* header */
@@ -103,6 +158,31 @@
   height: 640px;
 }
 
+@media (max-width: 768px) {
+  .main-header-image {
+    width: 100%;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-header-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-header-text p {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
 /* section1 - cooperation */
 
 .section-cooperation {
@@ -129,6 +209,30 @@
   gap: 48px;
 }
 
+@media (max-width: 768px) {
+  .section-cooperation {
+    padding: 48px 20px 48px 20px;
+    align-items: flex-start;
+  }
+
+  .section-cooperation p {
+    margin: 0 auto;
+  }
+
+  .section-cooperation-company {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    gap: 24px;
+    width: 100vw;
+    overflow-x: auto;
+  }
+
+  .section-cooperation-company::-webkit-scrollbar {
+    display: none; /* Chrome , Safari , Opera */
+  }
+}
+
 /* section2 - advantage */
 .section-advantage {
   display: flex;
@@ -144,6 +248,10 @@
   gap: 8px;
 }
 
+.section-advantage-main-mobile {
+  display: flex;
+}
+
 .section-advantage h1 {
   color: rgb(29, 30, 28);
   font-family: Pretendard;
@@ -152,6 +260,7 @@
   line-height: 120%;
   letter-spacing: 0%;
   text-align: center;
+  margin: 0 10px;
 }
 
 .section-advantage-list {
@@ -204,6 +313,50 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section-advantage-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-advantage-main h1 {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .section-advantage-main-mobile img {
+    width: 120px;
+    height: 34px;
+  }
+
+  .section-advantage-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* SECTION2 ANIMATION */
+
+.section-advantage .animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInAndSlideDown 1s ease forwards;
+}
+
+@keyframes fadeInAndSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* section3 - explore */
 .section-explore {
   display: flex;
@@ -264,6 +417,42 @@
 
 .section-explore-img {
   padding-top: 56px;
+}
+
+@media (max-width: 768px) {
+  .section-explore-main h1 {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .section-explore-main h5 {
+    margin: 16px 0px;
+  }
+
+  .section-explore-main-img img {
+    width: 120px;
+    height: 33px;
+  }
+
+  .section-explore p {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .section-explore-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* section4 - statistic */
@@ -340,12 +529,45 @@
   padding-top: 8px;
 }
 
+@media (max-width: 768px) {
+  .section-statistic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-statistic-text h5 {
+    margin: 16px 0px;
+  }
+
+  .section-statistic-text-content {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .section-statistic-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-statistic-grid {
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 /* FAQ */
 
 .Testinomial {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 112px 64px 112px 64px;
 }
 
 /* Subheading */
@@ -388,11 +610,10 @@
 .Cards {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 10%;
 }
 
 .Quotes {
-  flex: none;
   align-self: stretch;
   flex-grow: 0;
   margin: 24px 0px;
@@ -430,8 +651,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 8%;
-  top: 50%;
+  left: 62px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -446,8 +667,8 @@
   position: absolute;
   width: 360px;
   height: 338px;
-  left: 38%;
-  top: 5%;
+  left: 500px;
+  top: 0px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -463,8 +684,8 @@
   position: absolute;
   width: 360px;
   height: 338px;
-  left: 68%;
-  top: 80%;
+  left: 937px;
+  top: 30px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -480,8 +701,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 22%;
-  top: 450%;
+  left: 275px;
+  top: 440px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -489,7 +710,6 @@
   align-items: center;
   padding: 32px;
   border-radius: 24px;
-
   background: rgb(252, 190, 220);
 }
 
@@ -498,8 +718,8 @@
   position: absolute;
   width: 360px;
   height: 313px;
-  left: 52%;
-  top: 510%;
+  left: 716px;
+  top: 470px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
@@ -508,6 +728,57 @@
   padding: 32px;
   border-radius: 24px;
   background: rgb(251, 200, 153);
+}
+
+@media (min-width: 769px) {
+  .arrow-moblie {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Testinomial {
+    padding: 112px 64px 0px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Cards {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Cards .Gray-Card {
+    position: static;
+  }
+
+  .Cards .Green-Card {
+    display: none;
+  }
+
+  .Cards .Blue-Card {
+    display: none;
+  }
+
+  .Cards .Pink-Card {
+    display: none;
+  }
+
+  .Cards .Orange-Card {
+    display: none;
+  }
+
+  .arrow-moblie {
+    display: flex;
+    margin-left: 50%;
+    padding: 10px 0px;
+  }
+
+  .right-arrow {
+    margin-left: 10px;
+  }
 }
 
 .FAQ {
@@ -533,7 +804,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -571,7 +841,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 1;
@@ -586,7 +855,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -612,7 +880,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -642,6 +909,12 @@
   order: 0;
   flex-grow: 1;
   margin: 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .FAQ {
+    margin: 100px 0px 0px 0px;
+  }
 }
 
 .Divider {
@@ -691,7 +964,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -723,7 +995,6 @@
   padding: 20px 0px 20px 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   flex-grow: 1;
   margin: 0px 12px;
@@ -745,7 +1016,6 @@
 /* CTA */
 
 .CTA {
-  position: static;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -753,10 +1023,7 @@
   align-items: center;
   padding: 112px 64px 112px 64px;
 
-  flex: none;
   order: 8;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
 
 .CTA-Column {
@@ -766,7 +1033,6 @@
   align-items: center;
   padding: 0px;
 
-  flex: none;
   order: 0;
   flex-grow: 1;
   margin: 0px 80px;
@@ -783,7 +1049,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -791,22 +1056,6 @@
 }
 
 .CTA-Content .Frame-65 {
-  /* Frame 65 */
-  position: static;
-  /* 자동 레이아웃 */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 24px 0px;
-
   color: rgb(29, 30, 28);
   font-family: Pretendard;
   font-size: 96px;
@@ -814,10 +1063,6 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-}
-
-.CTA-Content .Frame-65 img {
-  margin: 0 24px;
 }
 
 .CTA-Text {
@@ -830,7 +1075,6 @@
   align-items: center;
   padding: 0px;
 
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -841,7 +1085,6 @@
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0%;
-  text-align: center;
 }
 
 /* Blog */
@@ -868,7 +1111,6 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 80px 0px;
@@ -885,7 +1127,6 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 0px;
@@ -909,7 +1150,6 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -926,7 +1166,6 @@
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -942,7 +1181,6 @@
   justify-content: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -965,7 +1203,6 @@
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -988,7 +1225,6 @@
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1006,7 +1242,6 @@
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 1;
   flex-grow: 0;
 }
@@ -1019,7 +1254,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 0;
   flex-grow: 0;
 }
@@ -1049,7 +1283,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1066,7 +1299,6 @@
   /* Placeholder / Image */
   position: static;
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1084,15 +1316,12 @@
   margin: 8px 0;
 }
 
-/* Footer */
 footer {
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-grow: 0;
-  margin: 0px;
   padding: 64px;
 }
 
@@ -1130,7 +1359,6 @@ footer {
 
 /* Inside Auto Layout */
 .card .Newsletter .card .Links {
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 32px 0px;
@@ -1145,7 +1373,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1155,8 +1382,6 @@ footer {
 /* Text Input */
 .card .Form input[type="email"] {
   position: static;
-  width: 368px;
-  height: 45px;
   /* 자동 레이아웃 */
   display: flex;
   flex-direction: row;
@@ -1166,6 +1391,7 @@ footer {
   border-bottom: 1px solid rgb(255, 255, 255);
   background: rgb(29, 30, 28);
   color: white;
+  align-self: stretch;
   /* 이메일 입력 텍스트 색상을 하얗게 설정 */
   font-size: 16px;
   /* 폰트 크기 설정 */
@@ -1184,7 +1410,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 0px 24px;
@@ -1199,9 +1424,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 1;
   flex-grow: 1;
   margin: 20px;
@@ -1216,9 +1441,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1239,9 +1464,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 1;
   margin: 0px 20px;
@@ -1255,9 +1480,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 8px 0px;
-  flex: none;
+
   order: 0;
   flex-grow: 1;
   margin: 0px;
@@ -1279,7 +1504,6 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1295,7 +1519,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1316,7 +1539,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1332,7 +1554,6 @@ footer {
   padding: 0px;
 
   /* Inside Auto Layout */
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 24px;
