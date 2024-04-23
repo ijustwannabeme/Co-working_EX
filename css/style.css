@@ -804,7 +804,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -842,7 +841,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 1;
   align-self: stretch;
   flex-grow: 1;
@@ -857,7 +855,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -883,7 +880,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -968,7 +964,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1000,7 +995,6 @@ body {
   padding: 20px 0px 20px 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   flex-grow: 1;
   margin: 0px 12px;
@@ -1055,7 +1049,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1118,7 +1111,6 @@ body {
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 0;
   flex-grow: 0;
   margin: 80px 0px;
@@ -1135,7 +1127,6 @@ body {
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 0;
   flex-grow: 0;
   margin: 0px 0px;
@@ -1159,7 +1150,6 @@ body {
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1176,7 +1166,6 @@ body {
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1192,7 +1181,6 @@ body {
   justify-content: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1215,7 +1203,6 @@ body {
   align-items: center;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
@@ -1238,7 +1225,6 @@ body {
   align-items: flex-start;
   padding: 0px;
   /* Inside Auto Layout */
-
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1256,7 +1242,6 @@ body {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 1;
   flex-grow: 0;
 }
@@ -1269,7 +1254,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-
   order: 0;
   flex-grow: 0;
 }
@@ -1299,7 +1283,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-
   order: 1;
   align-self: stretch;
   flex-grow: 0;
@@ -1316,7 +1299,6 @@ body {
   /* Placeholder / Image */
   position: static;
   /* Inside Auto Layout */
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1391,7 +1373,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1429,7 +1410,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-
   order: 1;
   flex-grow: 0;
   margin: 0px 24px;
@@ -1524,7 +1504,6 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
-
   order: 0;
   align-self: stretch;
   flex-grow: 0;
@@ -1540,7 +1519,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1561,7 +1539,6 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
-
   order: 1;
   flex-grow: 0;
   margin: 0px 10px;
@@ -1577,7 +1554,6 @@ footer {
   padding: 0px;
 
   /* Inside Auto Layout */
-
   order: 0;
   flex-grow: 0;
   margin: 0px 24px;
